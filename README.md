@@ -16,26 +16,21 @@ Yarn
 
 Installation
 Clone the repo
-bash
-Copy code
-git clone https://github.com/your_username_/Project-Name.git
+
+git clone https://github.com/Robertorc83/GiphyGallery
 
 Install dependencies
-bash
-Copy code
-cd Project-Name
+cd Giphy-Gallery
 yarn install
 
 Running the project
 To run the project in development mode, run the following command:
 
-Copy code
 yarn dev
 This will start the development server at http://localhost:5173 and open a browser window with the app running.
 
 Building the project
 To build the project for production, run the following command:
 
-Copy code
 yarn build
 This will create an optimized production build of the app in the dist directory.
