@@ -2,34 +2,50 @@ const path = require('path');
 module.exports = {
   env: {
     browser: true,
-    es2020: true
+    es2020: true,
   },
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react-hooks/recommended', 'plugin:react/recommended', 'plugin:import/recommended', 'plugin:jsx-a11y/recommended', 'plugin:@typescript-eslint/recommended', 'eslint-config-prettier', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'eslint-config-prettier',
+    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   plugins: ['react-refresh', '@typescript-eslint', 'prettier', 'react-hooks'],
   settings: {
     react: {
-      version: 'detect'
+      version: 'detect',
     },
     'import/resolver': {
       alias: {
-        map: [['@/assets', './src/assets'], ['@/components', './src/components'], ['@/data', './src/data']],
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
-      }
-    }
+        map: [
+          ['@/assets', './src/assets'],
+          ['@/components', './src/components'],
+          ['@/hooks', './src/hooks'],
+          ['@/types', './src/types'],
+        ],
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+      },
+    },
   },
   env: {
     browser: true,
     amd: true,
-    node: true
+    node: true,
   },
   parserOptions: {
     project: path.join(__dirname, 'tsconfig.json'),
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     // TypeScript rules
@@ -45,6 +61,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'no-multi-spaces': 'error',
+    'no-empty-function': 'off',
     eqeqeq: ['error', 'always'],
     'no-mixed-operators': 'error',
     'prefer-arrow-callback': 'error',
@@ -56,9 +73,12 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-uses-react': 'off',
     // Import rules
-    'import/order': ['error', {
-      groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
-      'newlines-between': 'always'
-    }]
-  }
+    'import/order': [
+      'error',
+      {
+        groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
+        'newlines-between': 'always',
+      },
+    ],
+  },
 };

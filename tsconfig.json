@@ -20,11 +20,14 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/assets/*" : ["src/assets/*"],
-      "@/components/*" : ["src/components/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/components/*": ["src/components/*"],
+      "@/interceptors/*": ["src/interceptors/*"],
+      "@/hooks/*": ["src/hooks/*"],
+      "@/types/*": ["src/types/*"]
     }
   },
-  
+
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
