@@ -1,36 +1,24 @@
 # GiphyGallery
 
-Technologies
-Vite
-Yarn
-React
-Tailwind
-Getting Started
-To get a local copy up and running follow these simple steps.
+Simple app to fetch gifs
+
+##Technologies
+- Vite
+- Yarn
+- React
+- Tailwind
+
+## Requirements
+- Node 16
+- yarn
+
+## Installation instructions
+
+clone this repository and run npm install
+npm run dev for development
+
+Then go to http://localhost:5173 in your browser
+
+you can visit the live version of this website in https://app.netlify.com/sites/elaborate-jalebi-6adc7d/overview
 
 
-Prerequisites
-Node.js (version 14 or higher)
-Yarn
-
-
-Installation
-Clone the repo
-git clone https://github.com/Robertorc83/GiphyGallery
-
-
-Install dependencies
-cd Giphy-Gallery
-yarn install
-
-
-Running the project
-To run the project in development mode, run the following command:
-yarn dev
-This will start the development server at http://localhost:5173 and open a browser window with the app running.
-
-
-Building the project
-To build the project for production, run the following command:
-yarn build
-This will create an optimized production build of the app in the dist directory.
