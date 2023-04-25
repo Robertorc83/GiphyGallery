@@ -1,6 +1,4 @@
 # GiphyGallery
-Project Title
-Short project description goes here.
 
 Technologies
 Vite
